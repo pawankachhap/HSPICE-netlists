@@ -1,5 +1,4 @@
-Simple Half-wave rectifier
-
+Simple Half-wave rectifier using diode
 D1 in out diode
 R1 out 0 1k
 
