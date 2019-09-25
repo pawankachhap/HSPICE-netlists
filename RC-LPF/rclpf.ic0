@@ -1,0 +1,15 @@
+* "simulator" "HSPICE" 
+* "version" "A-2008.03 32-BIT"
+* "format" "HSP"
+* "rundate" "02:55:47 09/25/2019 "
+* "netlist" "c:\users\hp\desktop\hspice netlists\git\hspice-netlists\rc-lpf\rclpf.sp "
+* "runtitle" "an rc lpf circuit for testing hspice"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in =   0.            
++ out =   0.            
+***   END: Saved Operating Point ***                     

@@ -1,0 +1,40 @@
+***** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******
+ Input File: c:\users\hp\desktop\hspice netlists\git\hspice-netlists\rc-lpf\rclp
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   User                 HOSTNAME: DESKTOP-LDT4P4I
+ lic: HOSTID: "107b44dce127 00fff28d9d17 f82819256e2f 0a002700000f 6e730ab0c448
+ lic: Using FLEXlm license file:
+ lic: C:\Flexlm\hspice_2007-09.lic
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9
+ lic: NODE LOCKED license on hostid "107b44dce127 00fff28d9d17 f82819256e2f 0a00
+ lic:
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
+ init: begin read circuit files,  cpu clock=  6.20E-02
+ init: end read circuit files,  cpu clock=  6.20E-02 memory=     14 kb
+ init: begin check errors,  cpu clock=  6.20E-02
+ init: end check errors,  cpu clock=  1.56E-01 memory=     19 kb
+ init: begin setup matrix, pivot=    10 cpu clock=  1.56E-01
+       establish matrix -- done,  cpu clock=  1.88E-01 memory=     19 kb
+       re-order matrix -- done,  cpu clock=  2.03E-01 memory=     19 kb
+ init: end setup matrix,  cpu clock=  2.03E-01 memory=     28 kb
+ dcop: begin dcop,  cpu clock=  2.03E-01
+ dcop: end dcop,  cpu clock=  2.66E-01 memory=     28 kb  tot_iter=       3
+ output: c:\users\hp\desktop\hspice netlists\git\hspice-netlists\rc-lpf\rclpf.ac
+ sweep: ac ac0    begin, #sweeps= 341 cpu clock=  2.81E-01
+ ac: frequency=    1.01E+06
+ ac: frequency=    1.48E+06
+ ac: frequency=    2.19E+06
+ ac: frequency=    3.24E+06
+ ac: frequency=    4.79E+06
+ ac: frequency=    7.08E+06
+ ac: frequency=    1.05E+07
+ ac: frequency=    1.55E+07
+ ac: frequency=    2.29E+07
+ ac: frequency=    3.39E+07
+ ac: frequency=    5.01E+07
+ sweep: ac ac0    end,  cpu clock=  4.37E-01 memory=     32 kb
+>info:         ***** hspice job concluded
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
+ lic: Release hspice token(s)
