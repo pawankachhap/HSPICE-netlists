@@ -1,0 +1,137 @@
+ ****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+  Copyright (C) 2008 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement found in:
+    C:\synopsys\Hspice_A-2008.03\license.warn
+  Use of this program is your acceptance to be bound by this 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: c:\users\hp\desktop\hspice netlists\git\hspice-netlists\diode_circ
+ Init: read install configuration file: C:\synopsys\Hspice_A-2008.03\meta.cfg
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
+
+
+
+
+
+ d1 in out diode
+ r1 out 0 1k
+
+ v1 in 0 sin(0 5 1k)
+
+ .model diode d
+ .tran 10n 10m
+
+ .end
+
+ ***********************************************************************
+ ** runlvl is invoked, you can disable it by:
+      a) Add option runlvl=0 to your current simulation job.
+      b) Copy $installdir/hspice.ini to your HOME directory and
+         customize it by adding option runlvl=0, which disables
+         it for all of your simulation jobs.
+      c) Re-invoke $installdir/bin/config program and unselect the
+         option runlvl setting in box 'hspice.ini' which disables
+         it for whole group simulation jobs.
+
+ ** runlvl is invoked, some options are ignored or automatically set:
+      Options below are automatically set(user setting will overwrite them):
+      if runlvl=6,            .option bypass=0
+      if runlvl=[1|2|3|4|5],  .option bypass=2
+
+      Options below are ignored, they are replaced by automated algorithms:
+        lvltim    dvdt      ft    fast   trtol  absvar  relvar
+          relq  chgtol    dvtr    imin    itl3    rmax
+
+ ** runlvl is invoked, actual option value used by HSPICE are:
+       runlvl= 3       bypass= 2      mbypass=   2.00   bytol= 100.00u
+ ***********************************************************************
+
+1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ simple half-wave rectifier                                                     
+  ******  diode model parameters           tnom=  25.000 temp=  25.000          
+ ******  
+ ********************************************************
+ *** common model parameters model name:   0:diode   ****
+ ********************************************************
+
+     names  values   units     names  values   units     names  values   units
+     -----  ------   -----     -----  ------   -----     -----  ------   -----
+
+   1*** dc breakdown parameters ***
+       vb=   0.    volts        ibv=   1.00m amps   
+
+   2*** parasitic resistance parameters ***
+       rs=   0.    ohms   
+
+   3*** capacitance parameters ***
+       fc= 500.00m              fcs= 500.00m                m= 500.00m        
+     mjsw= 330.00m               pb= 800.00m volts        php= 800.00m volts  
+       tt=   0.    secs         cjo=   0.    f/area       cjp=   0.    f/pj   
+
+   4*** temperature effect parameters ***
+     tlev=   0.               tlevc=   0.                 tcv=   0.    v/deg k
+      trs=   0.    /deg         cta=   0.    /deg         ctp=   0.    /deg   
+      xti=   3.00            xtitun=   3.00               keg=   1.00         
+       eg=   1.11  ev          gap1= 702.00u  ev/deg     gap2=   1.11k  deg   
+     ttt1=   0.    /deg        ttt2=   0.    /deg2        tm1=   0.    /deg   
+      tm2=   0.    /deg2        tpb=   0.    v/deg k     tphp=   0.    v/deg k
+     tref=  25.00   deg c 
+
+   5*** noise parameters ***
+       kf=   0.                  af=   1.00         
+
+   ***  level   1  model parameters  ***
+
+    level=   1.00                is=  10.00f amps         jsw=   0.    amps   
+        n=   1.00               nbv=   1.00                ik=   0.    amp    
+     area=   1.00                pj=   0.                 ikr=   0.    amp    
+    expli=   0.    amps      explir=   0.    amps        jtun=   0.    amps   
+   jtunsw=   0.    amps        ntun=  30.00         
+  
+
+ **warning** dc voltage reset to initial transient source value
+             in source        0:v1                  new dc=  0.0000D+00
+
+ 
+      
+1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ simple half-wave rectifier                                                     
+  ******  operating point information      tnom=  25.000 temp=  25.000          
+ ******  
+ ***** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage
+
+ +0:in      =   0.      0:out     =   0.     
+
+
+          ***** job concluded
+1****** HSPICE -- A-2008.03 32-BIT (Feb 26 2008) winnt ******                   
+ ******  
+ simple half-wave rectifier                                                     
+  ******  job statistics summary           tnom=  25.000 temp=  25.000          
+ ******  
+
+           total memory used         24 kbytes
+
+  # nodes =       3 # elements=       3
+  # diodes=       1 # bjts    =       0 # jfets   =       0 # mosfets =       0
+  # va device =       0
+
+    analysis           time    # points   tot. iter  conv.iter
+
+    op point           0.08           1          10
+    transient          0.16     1000001        1344         533 rev=        42
+    readin             0.05
+    errchk             0.23
+    setup              0.06
+    output             0.00
+           total cpu time          0.68 seconds
+           total elapsed time         1 seconds
+               job started at  18:32:44 09/25/2019
+               job ended   at  18:32:45 09/25/2019
+
+
+ Init: hspice initialization file: C:\synopsys\Hspice_A-2008.03\hspice.ini
